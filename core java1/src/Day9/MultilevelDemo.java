@@ -24,7 +24,8 @@ public class MultilevelDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Babydog bd= new BabyDog();
+		
+		BabyDog bd= new BabyDog();
 		bd.weep();
 		bd.bark();
 		bd.eat();

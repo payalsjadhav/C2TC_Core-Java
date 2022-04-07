@@ -15,7 +15,7 @@ class Ex extends Demo
 	{
 		System.out.println("Hello");
 	}
-	void method3()
+	void myMethod3()
 	{
 		System.out.println("My name is Payal");
 	}

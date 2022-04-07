@@ -1,6 +1,6 @@
 package Day9;
 
-class A
+class A1
 {
 	void msg()
 	{
@@ -14,15 +14,13 @@ class B
 		System.out.println("Welcome");
 	}
 }
-class MultipleInheritanceEXextends A,B 
+public class MultipleInheritance extends A1, B
 {
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
-		MultipleInheritanceEX obj=new
-				MultipleInheritanceEX();
+		MultipleInheritance obj=new MultipleInheritance();
+		
 		obj.msg();
-
 	}
 }
 

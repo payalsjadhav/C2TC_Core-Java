@@ -17,9 +17,7 @@ class B
 	{
 		System.out.println("what's ap");
 	}
-	
 }
-
 public class FIRST {
 
 	public static void main(String[] args) {
@@ -27,6 +25,7 @@ public class FIRST {
 		A a, a1;
 		B b,b1;
 		a=new A();
+		
 		
 
 	}

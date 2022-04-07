@@ -11,8 +11,11 @@ public class AppletDemo extends Applet
 	
 	public void init()
 	{
+		//
 		TextField tf = new TextField(25);
 		Button btn = new Button("Submit");
+		
+		//
 		add(tf);
 		add(btn);
 	}

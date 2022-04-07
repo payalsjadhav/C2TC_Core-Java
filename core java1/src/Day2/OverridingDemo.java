@@ -1,6 +1,6 @@
 package Day2;
 
-class C
+class C1
 {
 	public void meth1()//overriding with class D method 1
 	{
@@ -11,7 +11,7 @@ class C
 		System.out.println("Show Method 2 of class A");
 	}
 }
-class D extends C
+class D1 extends C1
 {
 	public void meth1()//overriding with class c method 1
 	{
@@ -23,7 +23,7 @@ class D extends C
 	}
 }
 
-public class overloading_overriding {
+public class OverridingDemo {
 	
 //		static void foo()
 //		{
@@ -43,11 +43,11 @@ public class overloading_overriding {
 //			foo(21);
 //			foo(22,23);
 			
-			C a;
-			a= new C();
+			C1 a;
+			a= new C1();
 			a.meth1();
 			
-			D b=new D();
+			D1 b=new D1();
 			b.meth1();
 
 	}
