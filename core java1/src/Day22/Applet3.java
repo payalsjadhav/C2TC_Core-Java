@@ -7,10 +7,6 @@ import java.awt.TextField;
 
 public class Applet3 extends Applet 
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;//by clicking the warning...
 	Button b1,b2;
 	TextField t;
 	public void init()

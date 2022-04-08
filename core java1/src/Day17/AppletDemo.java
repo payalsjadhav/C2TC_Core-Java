@@ -6,18 +6,18 @@ import java.awt.Button;
 
 public class AppletDemo extends Applet
 {
-	Button btn;
-	TextField tf;
+	Button b;
+	TextField t;
 	
 	public void init()
 	{
 		//
-		TextField tf = new TextField(25);
-		Button btn = new Button("Submit");
+		TextField t = new TextField(25);
+		Button b = new Button("Submit");
 		
 		//
-		add(tf);
-		add(btn);
+		add(t);
+		add(b);
 	}
 
 }
