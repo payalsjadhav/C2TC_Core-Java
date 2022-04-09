@@ -3,23 +3,23 @@ package Day26;
 import java.applet.Applet;
 import java.awt.TextField;
 import java.awt.Button;
-import java.awt.Components;
+import java.awt.Component;
 
 
 public class AppletDemo extends Applet 
 {
-	Button btn;
-	TextField tf;
-	Component cm;
+	Button b;
+	TextField t;
+	Component c;
 	
 	public void init()
 	{
-		TextField tf = new TextField(25);
-		Button btn = new Button("Submit");
-		Component cm = new Component();
+		TextField t = new TextField(25);
+		Button b = new Button("Submit");
+		Component c = new Component();
 		
-		add(tf);
-		add(btn);
+		add(t);
+		add(b);
 		setSize(400,100);
 	}
 

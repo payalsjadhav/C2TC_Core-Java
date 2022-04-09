@@ -6,7 +6,7 @@ import java.awt.CheckboxGroup;
 import java.awt.GridLayout;
 import java.awt.TextField;
 
-public class AppletGrid1 extends applet
+public class AppletGrid1 extends Applet
 {
 	Checkbox cb1,cb2,cb3,cb4,cb5,cb6;
 	CheckboxGroup cbg;
@@ -16,7 +16,7 @@ public class AppletGrid1 extends applet
 	{
 		setLayout(new GridLayout(4,2));
 		
-		cbg = new checkboxGroup();
+		cbg = new CheckboxGroup();
 		add(cb1 = new Checkbox("Tour1",cbg,false));
 		add(cb2 = new Checkbox("Manali"));
 		add(cb3 = new Checkbox("Tour2",cbg,false));

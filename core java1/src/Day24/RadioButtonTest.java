@@ -4,7 +4,7 @@ import java.applet.Applet;
 import java.awt.Checkbox;
 import java.awt.CheckboxGroup;
 
-public class RadioButtonTest extends Aoolet 
+public class RadioButtonTest extends Applet 
 {
 	
 	public void init( )

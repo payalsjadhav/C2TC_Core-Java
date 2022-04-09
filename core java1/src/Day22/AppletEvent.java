@@ -7,28 +7,28 @@ import java.awt.Event; //importing Event class of awt package
 import java.awt.TextField;
 
 
-public class AppletEvent extends applet
+public class AppletEvent extends Applet
 {
-	Button btn1,btn2;
-	TextField tf;
+	Button b1,b2;
+	TextField t;
 	
 	public void init()
 	{
-		btn1=new Button("Click");
-		tf=new TextField(10);
-		btn2 =new Button("clear");
-		add(btn1);
-		add(tf);
-		add(btn2);
+		b1=new Button("Click");
+		t=new TextField(10);
+		b2 =new Button("clear");
+		add(b1);
+		add(t);
+		add(b2);
 		setSize(300,100);
 		
 	}
 	public boolean action(Event e,Object o)
 	{
-		if(e.target.equals(btn1))
-			tf.setText("");
-		if(e.target.equals(obtn2))
-			tf.setText("");
+		if(e.target.equals(b1))
+			t.setText("");
+		if(e.target.equals(b2))
+			t.setText("");
 		
 		return true;
 		

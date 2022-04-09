@@ -3,7 +3,6 @@ package Day17;
 import java.applet.Applet;
 import java.awt.TextField;
 import java.awt.Button;
-
 public class AppletDemo extends Applet
 {
 	Button b;
@@ -11,9 +10,10 @@ public class AppletDemo extends Applet
 	
 	public void init()
 	{
-		//
-		TextField t = new TextField(25);
-		Button b = new Button("Submit");
+		Button b = new Button();
+			
+	   TextField t = new TextField();
+	   b.setLabel("Submit");
 		
 		//
 		add(t);

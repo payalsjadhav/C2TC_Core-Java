@@ -1,6 +1,6 @@
 package Day25;
 
-import java.applet.applet;
+import java.applet.Applet;
 import java.awt.Button;
 import java.awt.Event;
 import java.awt.GridLayout;
@@ -8,7 +8,7 @@ import java.awt.Panel;
 import java.awt.TextArea;
 
 
-public class Myapplet extends applet 
+public class Myapplet extends Applet 
 {
 	Panel1 pnl1;
 	Panel2 pnl2;
@@ -17,8 +17,8 @@ public class Myapplet extends applet
 	{
 		setLayout(new GridLayout(1,2));
 		
-		add(pnl1 = new Panel1();
-		add(pnl2 = new Panel2();
+		add(pnl1 = new Panel1());
+		add(pnl2 = new Panel2());
 		
 		pnl2.ta.setEditable(false);
 		
@@ -30,9 +30,9 @@ public class Myapplet extends applet
 		{
 			int n=1,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1; i <= 10; i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 				
 			}
@@ -41,9 +41,9 @@ public class Myapplet extends applet
 		{
 			int n=2,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i =1;i <=10; i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -51,9 +51,9 @@ public class Myapplet extends applet
 		{
 			int n=3,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -61,9 +61,9 @@ public class Myapplet extends applet
 		{
 			int n=4,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -71,9 +71,9 @@ public class Myapplet extends applet
 		{
 			int n=5,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -81,9 +81,9 @@ public class Myapplet extends applet
 		{
 			int n=6,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1; i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -91,9 +91,9 @@ public class Myapplet extends applet
 		{
 			int n=7,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -101,9 +101,9 @@ public class Myapplet extends applet
 		{
 			int n=8,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -111,9 +111,9 @@ public class Myapplet extends applet
 		{
 			int n=9,m=0;
 			pnl2.ta.setText(" ");
-			for(int i = 1,i <= 10,i++)
+			for(int i = 1;i <= 10;i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}
@@ -121,9 +121,9 @@ public class Myapplet extends applet
 		{
 			int n=10,m=0;
 			pnl2.ta.setText(" ");
-			for(int i=1,i<=10,i++)
+			for(int i =1;i <=10; i++)
 			{
-				m=m*i;
+				m=m*n;
 				pnl2.ta.append(" "+n+"*"+i+"="+m+"\n");
 			}
 		}

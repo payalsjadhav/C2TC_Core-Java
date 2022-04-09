@@ -11,11 +11,11 @@ public class Grid extends Applet
 	
 	Checkbox c1,c2,c3,c4;
 	TextField t;
-	//GridLayout g1;
+	GridLayout g1;
 
 	public void init()
 	{
-		//g1=new GridLayout(5,1);
+		g1=new GridLayout(5,1);
 		setLayout(new GridLayout(5,1));
 		add(c1= new Checkbox("1"));
 		add(c2= new Checkbox("2"));
