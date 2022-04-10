@@ -1,29 +1,33 @@
 package Day32;
 
 import java.applet.Applet;
+import java.awt.Button;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Applet2Part2  extends Applet implements ActionListener
 {
 	Button b1,b2;
-	Textfield t;
-	public void init()//override
-	add(b1=new button("click"));
+	TextField t;
+	public void init() {//override
+	add(b1=new Button("click"));
 	add(t=new TextField(15));
 	add(b2=new Button("clear"));
 	b1.addActionListener(this);
-	b2.addActionListner(this);
-	A a =new A();
-	//b2.addActionListner(new A());
+	//b2.addActionListener(this);
+	//A a =new A();
+	b2.addActionListener(new A());
 
 }
-public void actionPerformed(ActionEvent argo) {
-	t.settext("Hello World");
+public void actionPerformed(ActionEvent arg0) {
+	t.setText("Hello World");
 }
-class A implements ActionListner{
+class A implements ActionListener{
 	public A() {
-		b2.addActionListner();
+		b2.addActionListener(this);
 	}
-public void actionPerformed(ActionEvent e) {
+public void actionPerformed(ActionEvent e) {//implement
 	t.setText("");
 	
 }

@@ -27,18 +27,16 @@ public class Applet2Part6 extends Applet
 
 }
 class H implements ActionListener {//outre class
-	Applet2Part6 a;
-	public void extends(Applet2Part6 ap) {
-		a=ap;
-		
-	}
+	a=ap;
+	
 	public void actionPerFormed(ActionEvent e) {
-		//Applet2Part6 ap new Applet2Part6();
-		a.t.setText("Hello World");
+		Applet2Part6 ap=new Applet2Part6();
+		ap.t.setText("Hello World");
 		
 	}
 }
-class I implements  ActionListner { //outer class
+class I implements  ActionListener { //outer class
 	public void actionPerFormed(ActionEvent e) {
-		t.setText("");
+		t.setText(" ");
 	}
+}

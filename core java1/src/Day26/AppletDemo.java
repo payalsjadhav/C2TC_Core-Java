@@ -17,10 +17,10 @@ public class AppletDemo extends Applet
 		TextField t = new TextField(25);
 		Button b = new Button("Submit");
 		Component c = new Component();
+		//In Abstract class Object is not Created in this code
 		
 		add(t);
 		add(b);
 		setSize(400,100);
 	}
-
 }
