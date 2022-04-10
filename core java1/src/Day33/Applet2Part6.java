@@ -34,9 +34,7 @@ class H implements ActionListener {//outre class
 		ap.t.setText("Hello World");
 		
 	}
-}
-class I implements  ActionListener { //outer class
+}  //outer class
 	public void actionPerFormed(ActionEvent e) {
 		t.setText(" ");
 	}
-}

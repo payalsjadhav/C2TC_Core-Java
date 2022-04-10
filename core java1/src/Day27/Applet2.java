@@ -17,7 +17,7 @@ public class Applet2 extends Applet
 		add(b2=new Button("Clear"));
 		
 	}
-	public boolean action(Event e,Object o)//
+	public boolean Action (Event e,Object o)
 	{
 		if(e.target.equals(b2))
 			tf.setText("Hello");
