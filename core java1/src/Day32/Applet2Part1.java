@@ -18,7 +18,7 @@ public class Applet2Part1 extends Applet implements ActionListener
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 	}
-	public void ActionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {
 		Object O = e.getSource();
 		if(O.equals(b1));
 		t.setText("Hello World");

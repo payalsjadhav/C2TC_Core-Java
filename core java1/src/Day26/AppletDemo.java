@@ -16,8 +16,7 @@ public class AppletDemo extends Applet
 	{
 		TextField t = new TextField(25);
 		Button b = new Button("Submit");
-		Component c = new Component();
-		//In Abstract class Object is not Created in this code
+		Component c = new Component();		//cannot instantiate component class
 		
 		add(t);
 		add(b);

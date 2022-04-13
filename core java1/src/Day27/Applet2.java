@@ -3,7 +3,9 @@ package Day27;
 import java.applet.Applet;
 import java.awt.Button;
 import java.awt.Event;
+import java.awt.event.ActionEvent;
 import java.awt.TextField;
+import java.awt.event.ActionListener;
 
 public class Applet2 extends Applet
 {
@@ -17,12 +19,15 @@ public class Applet2 extends Applet
 		add(b2=new Button("Clear"));
 		
 	}
-	public boolean Action (Event e,Object o)
+	
+     public boolean ActionListener (Event e, Object o)
 	{
-		if(e.target.equals(b2))
+		if(e.target.equals(b1))
 			tf.setText("Hello");
 		if(e.target.equals(b2));
 		tf.setText("");
+		
+		return true;
 	}
 
 }

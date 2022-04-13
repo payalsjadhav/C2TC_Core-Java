@@ -20,21 +20,38 @@ public class Applet2Part6 extends Applet
 		add(b1=new Button("click"));
 		add(t = new TextField(15));
 		add(b2=new Button("Clear"));
-		b1.addActionListener(new H());
-		//b2.addActionListner(new I());
+		
+		b1.addActionListener(new H(this));
+		b2.addActionListener(new I(this));
 		
 	}
 
 }
-class H implements ActionListener {//outre class
-	a=ap;
+class H implements ActionListener
+{//outre class
 	
-	public void actionPerFormed(ActionEvent e) {
-		Applet2Part6 ap=new Applet2Part6();
-		ap.t.setText("Hello World");
+	Applet2Part6 ap;
+	
+	H(Applet2Part6 ap){
 		
+		this.ap=ap;
 	}
-}  //outer class
-	public void actionPerFormed(ActionEvent e) {
-		t.setText(" ");
+	
+	public void actionPerformed(ActionEvent e) 
+	{
+		ap.t.setText("Hello World");
 	}
+}
+class I implements ActionListener//outer class
+{
+	Applet2Part6 ap;
+	
+	I(Applet2Part6 ap){
+		
+		this.ap=ap;
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		ap.t.setText(" ");
+	}
+}

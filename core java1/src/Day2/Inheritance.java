@@ -1,6 +1,6 @@
 package Day2;
 
-class collage
+class College
 {
 	public void m1()
 	{
@@ -12,7 +12,7 @@ class collage
 	}
 
 }
-class depart extends collage
+class Depart extends College
 {
 	public void m3()
 	{
@@ -23,17 +23,14 @@ class depart extends collage
 public class Inheritance {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		collage A,B;
-		depart c;
-		A= new collage();
-		c= new depart();
-		//A.m1();
-		//c.m2();
-		c.m1();
-		c.m3();
-		c.m2();
-
+	
+		College cg = new College();
+		Depart dp = new Depart();
+		
+		cg.m1();
+		cg.m2();
+		dp.m3();
+	
 	}
 
 }
