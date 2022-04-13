@@ -1,4 +1,4 @@
-package com.guiapps;
+package Day35;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
@@ -7,10 +7,11 @@ import java.awt.TextField;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class GUIAPP2 extends Frame {
+public class GUIApp1  extends Frame 
+{
 	Button b1,b2;//components
 	TextField t;
-	public GUIAPP2() {//initialization
+	public GUIApp1() {//initialization
 		setLayout(new FlowLayout());
 		add(b1 = new Button("Click"));
 		add(t = new TextField(15));
@@ -31,7 +32,7 @@ public class GUIAPP2 extends Frame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new GUIAPP2();
+		new GUIApp1();
 
 	}
 

@@ -1,10 +1,11 @@
-package com.AppletDay35;
+package Day35;
 
 import java.applet.Applet;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-public class MouseMotion extends Applet {
+public class MouseMotion extends Applet
+{
 	public void init()
 	{
 		//add(b) = new Button("Click"))
@@ -22,6 +23,5 @@ public class MouseMotion extends Applet {
 		});
 		
 	}
-	
 
 }

@@ -1,4 +1,5 @@
 package Day36;
+
 class N{
 	
 }
