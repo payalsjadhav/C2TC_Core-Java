@@ -10,7 +10,7 @@ public class MouseMotion extends Applet {
 		//add(b) = new Button("Click"))
 		//b.addActionListener()
 		addMouseMotionListener(new MouseMotionAdapter() {
-			//@Override
+			@Override
 			public void mouseMoved(MouseEvent e) {
 				int x = e.getX();
 				int y = e.getY();
