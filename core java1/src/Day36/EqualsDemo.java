@@ -4,10 +4,26 @@ class Aa {
 }
 class Ab {
 	int i;
-	String s;
+	String s; //global variable
+	static int j;
+	public Ab() {
+		
+	}
 	public Ab(int i,String s) {
 	this.i = i;
 	this.s = s;
+	}
+	public int getI() {
+		return i;
+	}
+	public void setI(int i) {
+		this.i =i;
+	}
+	public String gets() {
+		return s;
+	}
+	public void sets(String s) {
+		this.s = s;
 	}
 }
 public class EqualsDemo {
@@ -17,7 +33,7 @@ public class EqualsDemo {
 		Aa a = new Aa(); //reference 1
 		Aa a1 = a;
 		Aa a2 = new Aa(); //Reference 2
-		if(a==a1)
+		/*if(a==a1)
 			System.out.println("Equal");
 		else
 			System.out.println("Not Equal");
@@ -32,7 +48,7 @@ public class EqualsDemo {
 		if(a.equals(a2))
 			System.out.println("Equal");
 		else
-			System.out.println("Not Equal");
+			System.out.println("Not Equal");*/
 		
 		
 		Ab b = new Ab(7,"Payal");

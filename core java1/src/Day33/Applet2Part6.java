@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-
 public class Applet2Part6 extends Applet
 {
 	Button b1,b2;
