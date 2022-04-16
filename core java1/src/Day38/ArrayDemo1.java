@@ -1,15 +1,15 @@
-package Day37;
+package Day38;
 
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class ArrayDemo2 extends Frame {
+public class ArrayDemo1 extends Frame {
 	int[] x;
 	int[] y;
 	int i;
-	public ArrayDemo2() {
+	public ArrayDemo1() {
 		x = new int[7];
 		y = new int[7];
 		for(int i =0;i<x.length;i++) {
@@ -33,7 +33,7 @@ public class ArrayDemo2 extends Frame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new ArrayDemo2();
+		new ArrayDemo1();
 		
 	}
 }

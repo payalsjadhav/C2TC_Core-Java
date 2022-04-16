@@ -1,4 +1,4 @@
-package Day35;
+package Day36;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
@@ -7,7 +7,7 @@ import java.awt.TextField;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class GUIApp1  extends Frame 
+public class GUIApp1 extends Frame 
 {
 	Button b1,b2;//components
 	TextField t;
@@ -35,5 +35,6 @@ public class GUIApp1  extends Frame
 		new GUIApp1();
 
 	}
+
 
 }
