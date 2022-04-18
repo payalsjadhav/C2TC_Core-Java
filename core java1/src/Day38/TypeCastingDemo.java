@@ -1,22 +1,35 @@
 package Day38;
+
+abstract class Car{
+	Car car;
+	public void start() {
+		System.out.println("I am in start method of Car");
+	}
+	public Car getCar() {
+		System.out.println("I want car object");
+		return car;
+	}
 public void stop() {
-	system.out.println("");
+	System.out.println("");
 	return ;
-@Override
-public void start() {
+}
+}
+	
+	class Maruti extends Car{
+		Maruti m;
+		public void start() {
 	System.out.println("I am in start method of Maruti Car");
 }
-public Maruti getCar1() {
+		public Maruti getCar1() {
 	System.out.println("I want car object");
 	return m;
-	
 }
-}
+	}
 class Duster extends Car{
-	Duster Duster;
+	Duster d;
 	public Duster getCar() {
-		System.out.println(I am Duster);
-		return m;
+		System.out.println("I am Duster");
+		return d;
 	}
 }
 

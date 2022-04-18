@@ -32,8 +32,8 @@ public class TypeCast1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Car c = new Car();
-		c.
+		Car c = new car();
+		c.car();
 		Maruti m = (Maruti)c;
 
 	}
