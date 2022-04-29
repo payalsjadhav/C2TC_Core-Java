@@ -11,7 +11,7 @@ public class exphand1 {
 			System.out.println("The Second Statements");
 			System.out.println("The Third Statements");
 			a=100;
-			b=5;
+			b=4;
 			int c=a/b;
 			System.out.println("The Fifth Statements");
 			System.out.println("The Sixth Statements");
