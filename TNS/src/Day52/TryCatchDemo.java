@@ -3,7 +3,8 @@ package Day52;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class TryCatchDemo throws Exception {
+public class TryCatchDemo throws Exception 
+{
 	public void m1()
 	{
 		try

@@ -20,7 +20,7 @@ class TContent {
 class ThreadJob extends Thread{
 	TContent t;
 	String s;
-	public ThreadJob(TContent t, String s) {
+	public ThreadJob (TContent t,String s) {
 		this.t = t;
 		this.s = s;
 		start();
