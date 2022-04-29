@@ -13,8 +13,8 @@ public class FtoA2 extends Applet
 		add(t1=new TextField(15));
 		add(t2=new TextField(15));
 		
-		C c=new C(null);
-		D d=new D(null);
+		C c=new C(this);
+		D d=new D(this);
 		
 		c.start();
 		d.start();

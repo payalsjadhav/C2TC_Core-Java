@@ -10,10 +10,6 @@ public class ExceptionDemo {
 			ExceptionDemo ed = new ExceptionDemo();
 			ed.m1();
 			//throws new ExceptionDemo();
-			loop{
-				try {
-					loop =!
-				}
-			}
+			
 		}
 	}

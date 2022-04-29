@@ -40,7 +40,7 @@ public class TryCatchDemo throws Exception
 				
 			}
 		}*/
-		catch(Exception e) {
+	/*	catch(Exception e) {
 			
 		}
 	    catch(InterruptedException e) {
@@ -52,7 +52,7 @@ public class TryCatchDemo throws Exception
 	   catch(ClassNotFoundException e) {
 		
 	   }
-	}
+*/	}
 	
 
 }
