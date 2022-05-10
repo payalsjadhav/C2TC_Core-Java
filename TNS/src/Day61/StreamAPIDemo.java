@@ -8,7 +8,7 @@ public class StreamAPIDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList <Statement> al = new ArrayList<Student>();
+		ArrayList <Student> al = new ArrayList<Student>();
 		List <Student> la = new ArrayList<Student>();
 		List <Student> lv = new Vector<Student>();
 		List <Student> l = new LinkedList<Student>();
