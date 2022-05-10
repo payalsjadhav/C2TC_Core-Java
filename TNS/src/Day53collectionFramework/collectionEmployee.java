@@ -4,6 +4,7 @@ public class collectionEmployee {
 	int id;
 	String name;
 	double salary;
+	
 	public collectionEmployee() {
 		
 	}
@@ -38,10 +39,20 @@ public class collectionEmployee {
 			else
 				return false;
 		}
-	/*@Override
+	@Override
 	public int hashCode() {
 		return id;
-	}*/
+	}
+	@Override
+	public int compareTo(Object o) {
+		/*if(this.id < ((collectionEmployee)o).id)
+			return -1;
+		if(this.id > ((collectionEmployee)o).id)
+			return 1;
+		else
+			return 0;*/
+		return(this.id - ((collectionEmployee)o).id);
+	}
 	@Override
 	public String toString() {
 		return "collectionEmployee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
