@@ -10,7 +10,6 @@ class stack1 {
         animals.push("Dog");
         animals.push("Horse");
         animals.push("Cat");
-        
         animals.pop();
 
         System.out.println("Stack: " + animals);

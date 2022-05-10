@@ -2,6 +2,7 @@ package Day61;
 
 import java.beans.Statement;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class StreamAPIDemo {
 
@@ -43,8 +44,15 @@ public class StreamAPIDemo {
 			Student s = it.next();
 			System.out.println(s);
 		}
+		Stream <Student> ss = al.stream();
+		System.out.println(ss);
+		System.out.println("------------------------------------------------------------------------");
+		al.stream().forEach(System.out::println);
+		System.out.println(al.stream().mapToDouble(Student::getMarks).average());
+		OptionalDouble od = al.stream().filter(ls)-> s.getMarks()< 14).mapDouble(Student::Marks).average();
+		System.out.println(od);
+		System.out.println("Min Mark -" +al.Stream().min(Comparator.comparing(Student::getMarks)));
+		System.out.println(al.stream().filter{(s) -> g.getMarks() < 20.map[(s) ->s.getMarks()].collect(collectors.toSet()));
 		}
-		
-		
-
+	}
 }
