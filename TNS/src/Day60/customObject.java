@@ -1,5 +1,8 @@
 package Day60;
 
+import java.util.Collections;
+import java.util.List;
+
 class customObject implements Comparable<customObject> {
     String name;
 
@@ -21,8 +24,9 @@ public class customObjectSorting {
         simpsons.add(new customObjectCharacter("Marge "));
         simpsons.add(new customObjectCharacter("Bart "));
         simpsons.add(new customObjectCharacter("Lisa "));
-
-        Collections.sort(customObject);
+        
+        List<>
+		Collections.sort(customObject);
         customObject.stream().map(s -> s.name).forEach(System.out::print);
 
         Collections.reverse(simpsons);

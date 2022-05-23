@@ -1,6 +1,6 @@
 package Day53collectionFramework;
 
-public class collectionEmployee {
+public class collectionEmployee implements Comparable<collectionEmployee>{
 	int id;
 	String name;
 	double salary;
@@ -43,19 +43,26 @@ public class collectionEmployee {
 	public int hashCode() {
 		return id;
 	}
-	@Override
-	public int compareTo(Object o) {
-		/*if(this.id < ((collectionEmployee)o).id)
-			return -1;
-		if(this.id > ((collectionEmployee)o).id)
-			return 1;
-		else
-			return 0;*/
-		return(this.id - ((collectionEmployee)o).id);
-	}
+	
 	@Override
 	public String toString() {
 		return "collectionEmployee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	/*public int compareTo((Object o) {
+		/*if(this.id < ((collectionEmployee)o).id)
+		return -1;
+	if(this.id > ((collectionEmployee)o).id)
+		return 1;
+	else
+		return 0;*/
+	//return(this.id - ((collectionEmployee)o).id);
+	//}
+
+	@Override
+	public int compareTo(collectionEmployee o) {
+		// TODO Auto-generated method stub
+		return (this.id - ((collectionEmployee)o).id);
 	}
 
 }

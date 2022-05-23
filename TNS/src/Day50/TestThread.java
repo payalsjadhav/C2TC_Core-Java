@@ -69,8 +69,8 @@ public class TestThread {
 		try
 		{
 			
-			t.join();
-	        t1.join();
+			T.join();
+	        T1.join();
 		}
 		catch(Exception e)
 		{

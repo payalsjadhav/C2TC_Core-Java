@@ -38,9 +38,11 @@ class Thread1 extends Multithread2
 		System.out.println("Starting"+ threadName);
 		if(t==null)
 		{
-			t=new Thread(this);
-			t.start();
+			
 		}
+	}
+	public Thread1() {
+		super();
 	}
 }
 
