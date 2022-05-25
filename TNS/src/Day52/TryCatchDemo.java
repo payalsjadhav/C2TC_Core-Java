@@ -3,7 +3,7 @@ package Day52;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class TryCatchDemo throws Exception 
+public class TryCatchDemo throws Exception
 {
 	public void m1()
 	{
@@ -26,7 +26,7 @@ public class TryCatchDemo throws Exception
 		catch(Exception e) {
 			
 		}*/
-		/*catch(Exception e){
+		catch(Exception e){
 			if(e instanceof InterruptedException) {
 			
 			}
@@ -39,7 +39,7 @@ public class TryCatchDemo throws Exception
 			{
 				
 			}
-		}*/
+		}
 	/*	catch(Exception e) {
 			
 		}

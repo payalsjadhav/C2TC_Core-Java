@@ -100,6 +100,33 @@ public class College implements Serializable{
 	public void setAdmin(Admin studentAdmin) {
 		this.studentAdmin = studentAdmin;
 	}
+	
+	public Set<Student> getStudent() {
+		return student;
+	}
+
+	public void setStudent(Set<Student> student) {
+		this.student = student;
+	}
+	
+	
+
+	public Set<Placement> getPlacement() {
+		return placement;
+	}
+
+	public void setPlacement(Set<Placement> placement) {
+		this.placement = placement;
+	}
+
+	public Set<Certificate> getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(Set<Certificate> certificate) {
+		this.certificate = certificate;
+	}
+
 
 	@Override
 	public String toString() {

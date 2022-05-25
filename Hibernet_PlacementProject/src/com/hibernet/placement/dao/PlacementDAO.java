@@ -1,5 +1,7 @@
 package com.hibernet.placement.dao;
 
+import javax.persistence.EntityManager;
+
 import com.hibernet.placement.entitise.Placement;
 
 public interface PlacementDAO {

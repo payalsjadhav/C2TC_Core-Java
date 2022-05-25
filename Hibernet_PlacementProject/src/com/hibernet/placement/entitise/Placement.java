@@ -1,4 +1,5 @@
 package com.hibernet.placement.entitise;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -90,13 +91,20 @@ public class Placement implements Serializable{
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
+	
+	public College getCollege() {
+		return college;
+	}
+
+	public void setCollege(College college) {
+		this.college = college;
+	}
 
 	@Override
 	public String toString() {
 		return "Placement [placementId=" + placementId + ", Name=" + Name + ", Qualification=" + Qualification
 				+ ", Year=" + Year + ", date=" + date + "]";
 	}
-	
 	
 
 }

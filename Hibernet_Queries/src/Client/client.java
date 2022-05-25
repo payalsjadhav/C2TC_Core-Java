@@ -39,6 +39,8 @@ public class client {
 		}
 		for(Book book3: bs.getBooksInPriceRange(10, 60)){
 			System.out.println(book3);
+			
+			//for(Book book3: bs.getBook)
 		}
 	}
 

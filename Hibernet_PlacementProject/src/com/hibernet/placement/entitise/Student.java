@@ -63,6 +63,7 @@ public class Student
 		this.year = year;
 		this.course = course;
 		this.hallTicketNo = hallTicketNo;
+		this.studentCertificate=studentCertificate;
 	}
 
 
@@ -134,6 +135,34 @@ public class Student
 	public void setHallTicketNo(long hallTicketNo) {
 		this.hallTicketNo = hallTicketNo;
 	}
+	
+	public Certificate getStudentCertificate() {
+		return studentCertificate;
+	}
 
+
+	public void setStudentCertificate(Certificate studentCertificate) {
+		this.studentCertificate = studentCertificate;
+	}
+	
+	
+
+
+public College getCollege() {
+		return college;
+	}
+
+
+	public void setCollege(College college) {
+		this.college = college;
+	}
+
+
+@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", roll=" + roll + ", qualification=" + qualification
+				+ ", year=" + year + ", course=" + course + ", hallTicketNo=" + hallTicketNo + ", studentCertificate="
+				+ studentCertificate + "]";
+	}
 
 }
