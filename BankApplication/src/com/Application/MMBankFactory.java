@@ -1,26 +1,20 @@
 package com.Application;
 
-import com.Framework.CurrentAcc;
+import com.Framework.BankFactory;
 
-public class MMBankFactory extends CurrentAcc
+public class MMBankFactory  implements BankFactory
 {
-	public MMBankFactory() {}
-
-	public MMBankFactory(int accNo, String accNm, float accBal, float creditLimit) 
-	{
-		super(accNo, accNm, accBal, creditLimit);
-	}
-	
 	@Override
-	public void withdraw(float accBal)
+	public MMSavingAcc getNewSavingAcc(int accNo, String accNm, float accBal, boolean isSalaried)
 	{
-		System.out.println("Dear Customer : \n Your Current Account Balance are: "+accBal+"\n        And Credit limit  is: "+creditLimit);
-		System.out.println("		    Total Amount : " +(accBal+creditLimit));
+		MMSavingAcc mmsaving = new MMSavingAcc(accNo, accNm, accBal, isSalaried);
+		return mmsaving;
 	}
 
 	@Override
-	public String toString()
+	public MMCurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal, float creditLimit) 
 	{
-		return super.toString()+"MMCurrentAcc []";
+		MMCurrentAcc mmcurrent = new MMCurrentAcc(accNo, accNm, accBal, creditLimit);
+		return mmcurrent;
 	}
 }
