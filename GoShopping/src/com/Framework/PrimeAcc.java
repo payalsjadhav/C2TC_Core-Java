@@ -1,44 +1,43 @@
 package com.Framework;
 
-import com.framework.ShopAcc;
-
 public class PrimeAcc extends ShopAcc
 {
 	private boolean isPrime;
-	private static final float derivarycharges = 0.00f;
+	private static final float deliveryCharges = 0;
 	
-	public PrimeAcc()
+	public PrimeAcc() {}
+	
+	public PrimeAcc(int accNo, String accNm, float charges, boolean isPrime)
 	{
-		
-	}
-	public PrimeAcc(int accNO,String accName,float charges,boolean isPrime)
-	{
-		super();
+		super(accNo, accNm, charges);
 		this.isPrime = isPrime;
-		
 	}
 	
-	public boolean isPrime()
+	@Override
+	public void bookProduct(float charges)
+	{
+		
+	}
+
+	public boolean isPrime() 
 	{
 		return isPrime;
 	}
-	
-	public void setPrime(boolean isPrime)
+
+	public void setPrime(boolean isPrime) 
 	{
 		this.isPrime = isPrime;
 	}
+
+	public static float getDeliverycharges() 
+	{
+		return deliveryCharges;
+	}
 	
-	public static float getDerivarycharges()
+	@Override
+	public String toString() 
 	{
-		return derivarycharges;
-	}
-	public void bookProduct(float charg)
-	{
-	
-	}
-	public String toString()
-	{
-		return super.toString()+"PrimeAcc[isPrime="+isPrime+"]";
-	}
+		return "PrimeAcc [isPrime=" + isPrime + "]"; 
+	} 
 
 }

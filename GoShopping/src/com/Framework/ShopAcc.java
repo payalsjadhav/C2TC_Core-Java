@@ -1,57 +1,57 @@
 package com.Framework;
 
-public abstract class ShopAcc 
+public abstract class ShopAcc
 {
-	private int accNO;
-	private String accName;
+	private int accNo;
+	private String accNm;
 	private float charges;
 	
-	public ShopAcc()
-	{
-		
-	}
+	public ShopAcc() {}
 	
-	public ShopAcc(int accNO,String accName,float charges)
+	public ShopAcc(int accNo, String accNm, float charges) 
 	{
-		this.accNO = accNO;
-		this.accName = accName;
+		this.accNo = accNo;
+		this.accNm = accNm;
 		this.charges = charges;
 	}
+	public void bookProduct(float charges)
+	{
+		
+	}
 	
-	public int getAccNO()
+	public void items(float charges)
 	{
-		return accNO;
-	}
-	public void setAccNO(int accNO)
-	{
-		this.accNO = accNO;
 		
 	}
-	public String getAccName()
+	
+	public int getAccNo()
 	{
-		return accName;
-		
+		return accNo;
 	}
-	public void setAccName(String accName)
+	public void setAccNo(int accNo) 
 	{
-		this.accName = accName;
-		
+		this.accNo = accNo;
 	}
-	public float getCharges()
+	public String getAccNm() 
+	{
+		return accNm;
+	}
+	public void setAccNm(String accNm) 
+	{
+		this.accNm = accNm;
+	}
+	public float getCharges() 
 	{
 		return charges;
 	}
-	public void setCharges(float charges)
+	public void setCharges(float charges) 
 	{
 		this.charges = charges;
-		
 	}
-	public abstract void bookProduct(float charg);
 	
-	public void items(float charg)
+	@Override
+	public String toString() 
 	{
-		float c=charg;
-	
-
-}
+		return "ShopAcc [accNo=" + accNo + ", accNm=" + accNm + ", charges=" + charges + "]";
+	}
 }

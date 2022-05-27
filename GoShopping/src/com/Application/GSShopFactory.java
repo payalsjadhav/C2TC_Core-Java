@@ -1,20 +1,20 @@
 package com.Application;
 
-import com.framework.ShopFactory;
+import com.Framework.ShopFactory;
 
-public class GSShopFactory implements ShopFactory 
+public class GSShopFactory implements ShopFactory
 {
 	@Override
-	public GSPrimeAcc getNewPrimeAccount(int accNO,String accName,float charges,boolean isPrime)
+	public GSPrimeAcc getNewPrimeAcc(int accNo, String accNm, float charges, boolean isPrime) 
 	{
-		GSPrimeAcc gspa = new GSPrimeAcc(accNO,accName,charges,isPrime);
-		return gspa;
+		GSPrimeAcc gsprime = new GSPrimeAcc(accNo, accNm, charges, isPrime);
+		return gsprime;
 	}
+	
 	@Override
-	public GSNormalAcc getNewNormalAccount(int accNO,String accName,float charges)
+	public GSNormalAcc getNewNormalAcc(int accNo, String accNm, float charges, float deliveryCharges) 
 	{
-		GSNormalAcc gsna = new GSNormalAcc(accNO,accName,charges);
-		return gsna;
+		GSNormalAcc gsnormal = new GSNormalAcc(accNo, accNm, charges, deliveryCharges);
+		return gsnormal;
 	}
-
 }

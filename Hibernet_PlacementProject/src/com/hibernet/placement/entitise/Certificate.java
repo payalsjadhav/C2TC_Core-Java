@@ -5,8 +5,6 @@ import java.io.Serializable;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -29,7 +27,7 @@ public class Certificate implements Serializable{
 	private int passingyear;
 	
 	@Column(name="studentCollege")
-	private String stdcollege;
+	private String Stdcollege;
 	
 	@OneToOne(mappedBy="studentCertificate")
 	private Student student;
@@ -46,11 +44,11 @@ public class Certificate implements Serializable{
 	
 	
 
-	public Certificate(int studentid, int passingyear, String college) {
+	public Certificate(int studentid, int passingyear, String Stdcollege) {
 		super();
 		this.studentid = studentid;
 		this.passingyear = passingyear;
-		this.stdcollege = stdcollege;
+		this.Stdcollege = Stdcollege;
 	}
 
 
@@ -85,23 +83,31 @@ public class Certificate implements Serializable{
 
 
 	public String getCollege() {
-		return stdcollege;
+		return Stdcollege;
 	}
 
 
 
 
 	public void setCollege(String college) {
-		this.stdcollege = stdcollege;
+		this.Stdcollege = college;
 	}
 	
+	
+
+
+
+
 	public void setCollege(College college) {
 		this.college = college;
 	}
-	
+
+
+
+
 	@Override
 	public String toString() {
-		return "Certificate [studentid=" + studentid + ", passingyear=" + passingyear + ", college=" + stdcollege + "]";
+		return "Certificate [studentid=" + studentid + ", passingyear=" + passingyear + ", college=" + Stdcollege + "]";
 	}
 
 

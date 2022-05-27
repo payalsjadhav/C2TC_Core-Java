@@ -1,6 +1,5 @@
-package com.hibernet.placement.dao;
 
-import javax.persistence.EntityManager;
+package com.hibernet.placement.dao;
 
 import com.hibernet.placement.entitise.Admin;
 

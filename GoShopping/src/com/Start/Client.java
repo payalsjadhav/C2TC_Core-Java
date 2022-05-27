@@ -4,36 +4,29 @@ import com.Application.GSNormalAcc;
 import com.Application.GSPrimeAcc;
 import com.Application.GSShopFactory;
 
-public class Client {
-	public static void main(String[] args) 
+public class Client
+{
+	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
-		//Step1-Step a
 		GSShopFactory gssfactory = new GSShopFactory();
-				gssfactory.getNewPrimeAccount(123, "Payal", 1000, true);
-				gssfactory.getNewNormalAccount(111, "Payal2", 1000);
-				
-				
-				//Step2
-				GSPrimeAcc gspa = new GSPrimeAcc();
-				gspa.getAccName();
-				gspa.getAccNO();
-				gspa.getCharges();
-				
-				//Step5/Step e
-				gspa.toString();
-				
-				//Step3
-				GSNormalAcc gsna = new GSNormalAcc();
-				gsna.getAccName();
-				gsna.getAccNO();
-				gsna.getCharges();
-				gsna.getDeliveryCharge();
-				
-				//Step4 /Step d
-				gsna.bookProduct(1000);
-				//Step 5 /Step e
-				gsna.toString();
-				}
-
+		gssfactory.getNewPrimeAcc(1189,"Rutik", 499, true);
+		gssfactory.getNewNormalAcc(2454,"Harsh" , 899, 40);
+		
+		GSPrimeAcc gsprime = new GSPrimeAcc();
+		gsprime.getAccNm();
+		gsprime.getAccNo();
+		gsprime.getCharges();
+		
+		gsprime.bookProduct(5700);
+		gsprime.toString();
+		
+		GSNormalAcc gsnorsmal = new GSNormalAcc();
+		gsnorsmal.getAccNm();
+		gsnorsmal.getAccNo();
+		gsnorsmal.getCharges();
+		gsnorsmal.getDeliveryCharges();
+		
+		gsnorsmal.bookProduct(3249);
+		gsnorsmal.toString();
+	}
 }

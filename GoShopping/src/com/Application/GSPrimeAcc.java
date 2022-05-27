@@ -1,28 +1,33 @@
 package com.Application;
 
-import com.framework.PrimeAcc;
+import com.Framework.PrimeAcc;
 
-public class GSPrimeAcc extends PrimeAcc 
+public class GSPrimeAcc extends PrimeAcc
 {
-private static final float charge = 200.25f;
+	private static final float deliveryCharges = 0;
+
+	public GSPrimeAcc() {}
 	
-	public GSPrimeAcc()
+	public GSPrimeAcc(int accNo, String accNm, float charges, boolean isPrime) 
 	{
-		
-	}
-	public GSPrimeAcc(int accNO,String accName,float charges,boolean isPrime)
-	{
-		super(accNO,accName,charges,isPrime);
+		super(accNo, accNm, charges, isPrime);
 	}
 	
-	public void bookProduct(float charg)
-	{
-		
-	}
 	@Override
-	public String toString()
+	public void bookProduct(float charges)
 	{
-		return super.getAccNO()+super.getAccName()+super.getCharges()+super.isPrime();
+		System.out.println("Dear Prime User: \n 		Free Delivery \n		Your Product Charges are:"+charges);
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "GSPrimeAcc [Charges : "+ deliveryCharges +"]";
+	}
+
+	public static float getDeliverycharges()
+	{
+		return deliveryCharges;
 	}
 	
-	}
+}

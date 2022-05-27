@@ -54,7 +54,7 @@ public class Student
 	}
 	
 	
-	public Student(int id, String name, long roll, String qualification, int year, String course, long hallTicketNo) {
+	public Student(int id, String name, long roll, String qualification, int year, String course, long hallTicketNo, Certificate studentCertificate) {
 		
 		this.id=id;
 		this.name = name;

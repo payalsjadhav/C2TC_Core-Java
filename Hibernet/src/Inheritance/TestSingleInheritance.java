@@ -19,7 +19,7 @@ public class TestSingleInheritance {
 		em.persist(e);
 		
 		Manager m = new Manager();
-		m.setEmpName("Aniket");
+		m.setEmpName("Payal");
 		m.setEmpSalary(20000);
 		m.setDeptName("Training");
 		em.persist(m);

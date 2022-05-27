@@ -1,3 +1,6 @@
+
+//Web Based Placement Management System using Certificate Authentication
+
 package com.hibernet.placement.client;
 
 import java.time.LocalDate;
@@ -44,10 +47,6 @@ public class Client {
 		UserServices us = new UserServicesImpl();
 		CertificateServices Cs= new CertificateServicesImpl();
 		PlacementServices ps = new PlacementServicesImpl();
-		
-		
-		
-		
 		
 		//FOR STUDENT
 		//Row1

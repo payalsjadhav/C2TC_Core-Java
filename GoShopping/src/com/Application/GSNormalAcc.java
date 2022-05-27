@@ -1,46 +1,29 @@
 package com.Application;
 
+import com.Framework.NormalAcc;
+
 public class GSNormalAcc extends NormalAcc
 {
-	public GSNormalAcc() {
-		
-	}
-	public GSNormalAcc(int accNO,String accName,float charges)
-	{
-		super(accNO,accName,charges);
-	}
-	public void bookProduct(float charg)
+	public GSNormalAcc() 
 	{
 		
 	}
-	/*@Override
-	  public String toString()
-	  {
-	  return super.getAccName()+super.getAccNO()+super.get.charges()+super.getDerivarycharge();
-	  }*/
-	/*@Override
-	public String toString() {
-		return "Dear Normal user [delivery charges are" + getDeliveryCharges() +", Charges=" +getCharges()+"]";
-	}*/
-	 
-	
-	
-	/*public void getAccName() {
-		// TODO Auto-generated method stub
-		
+	public GSNormalAcc(int accNo, String accNm, float charges, float deliveryCharges)
+	{
+		super(accNo, accNm, charges, deliveryCharges);
 	}
-	public void getDeliveryCharge() {
-		// TODO Auto-generated method stub
-		
-	}
-	public void getCharges() {
-		// TODO Auto-generated method stub
-		
-	}
-	public void getAccNO() {
-		// TODO Auto-generated method stub
-		
-	}*/
 
-
+	@Override
+	public void bookProduct(float charges)
+	{
+		System.out.println("Dear Normal User:-\n	Your product Charges are: "+charges+"\n	 And Delivery Charges is: "+deliveryCharges );
+		System.out.println("	           Total charges: "+(charges+deliveryCharges));
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "GSNormalAcc [accNo=" + getAccNo() + ", charges=" + getCharges() + ", toString()=" + super.toString()
+				+ ", getAccNm()=" + getAccNm() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}	
 }
